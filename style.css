@@ -1,0 +1,181 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background-image: url('logo.jpg');
+	background-size: cover;
+    background-position: center;
+	backdrop-filter: blur(35px);
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Навігація */
+header {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+	transition: all 500ms ease;
+}
+
+nav .logo:hover {
+	transform: scale(1.2); 
+	color: yellow;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+nav ul li {
+    display: inline-block;
+	transition: all 500ms ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.2); 
+	color: yellow;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+	transition: all 500ms ease;
+}
+
+nav ul li a:hover {
+	color: yellow;
+}
+
+/* Секції */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Гравці */
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+	transition: all 500ms ease;
+}
+
+.member img:hover {
+    transform: scale(1.1); /* Збільшуємо зображення на 10% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Додаємо тінь */
+}
+
+.member img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 15px;
+	transition: all 300ms ease;
+}
+
+.member h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 1rem;
+}
+
+/* Форми */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 300px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#player-video {
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    padding: 15px 0;
+    text-align: center;
+	color: white;
+}

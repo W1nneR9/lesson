@@ -1,0 +1,127 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Стилизация секции История */
+.history {
+    background-color: black;
+    padding: 40px 0;
+	color:white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.history-timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.timeline-date {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 20px;
+}
+
+.timeline-content {
+    width: 80%;
+}
+
+.timeline-content h2 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.timeline-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.timeline-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .timeline-date {
+        margin-bottom: 10px;
+    }
+}
